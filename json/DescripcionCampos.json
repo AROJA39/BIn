@@ -1,0 +1,88 @@
+{
+	"FIELD_003": "(.{2})(.{2})(.{2})",
+	"FIELD_003_DESCRIPTIONS": "TIPO_DE_PROCESO,CUENTA_DEBITO,CUENTA_CREDITO",
+	"FIELD_003_DESCRIPTIONS_DOCUMENTATION": "Codigo de proceso",
+
+	"FIELD_022": "(.{3})",
+	"FIELD_022_DESCRIPTIONS": "POINT_OF_SERVICE_ENTRY_MODE",
+	"FIELD_022_DESCRIPTIONS_DOCUMENTATION": "Modo del punto de entrada (021 sin tarjeta presente, 051 con tarjeta presente, 031)",
+	
+	"FIELD_032": "(.{11})",
+	"FIELD_032_DESCRIPTIONS": "CODIGO_ENTIDAD_ADQUIRENTE",
+	"FIELD_032_DESCRIPTIONS_DOCUMENTATION": "Codigo de la entidad adquiriente (10000000001: BBOG, 10000000002: BPOP, 10000000023: BOCC, 10000000052: BAVV, 10000000054: ATH)",
+	
+	"FIELD_035": "(.{6})(.{10})(.{1})(.{4})(.{3})(.{5})(.{3})(.{5})",
+	"FIELD_035_DESCRIPTIONS": "BIN,NUM_TARJETA,SEPARADOR,FECHA_VENCIM,CODIGO_DE_SERVICIO,FILLER1,CVV2,FILLER2",
+	"FIELD_035_DESCRIPTIONS_DOCUMENTATION": "BIN de la tarjeta|Numero complemento de la tarjeta|SEPARADOR|Fecha de Vencimiento de la tarjeta|Codigo de servicio|FILLER1|CVV2|FILLER2",
+	"FIELD_035_CEL2CEL": "(.{6})(.{18})(.{1})(.{1})(.{3})(.{8})", 
+	"FIELD_035_CEL2CEL_DESCRIPTIONS": "BIN,NUMERO_DE_CUENTA_ORIGEN,SEPARADOR,CANAL_BM,FECHA_DE_VENCIMIENTO,NUMERO_DE_ENTIDAD",
+	"FIELD_035_CEL2CEL_DESCRIPTIONS_DOCUMENTATION": "SeudoBIN segun el canal (008801: BBOG, 008802: BPOP, 008823: BOCC, 008852: BAVV)|Numero de cuenta origen a la derecha con ceros a la izquierda|SEPARADOR|Indicador del Canal Banca Movil (Valor fijo 2)|Fecha de vencimiento de seudoBIN (Valor fijo 9912)|Numero de la entidad",
+	"FIELD_035_QR_BBOG_ACH": "(.{4})(.{4})(.{1})(.{8})(.{1})(.{4})(.{13})", 
+	"FIELD_035_QR_BBOG_ACH_DESCRIPTIONS": "BIN,IDENTIFICACION_DE_ENTIDAD,FILLER1,PAN_COMPLEMENTO,SEPARADOR,FECHA_DE_VENCIMIENTO,FILLER2",
+	"FIELD_035_QR_BBOG_ACH_DESCRIPTIONS_DOCUMENTATION": "SeudoBIN (8911: DEPOSITO, 8910: DEVOLUCION O RETIRO OTP)|Identificacion de la entidad (0023: BOCC, 0052: BAVV, 0002: BPOP, 0097: DALE)|FILLER1|Numero complemento de la cuenta tecnica (8 ultimas posiciones del numero de cedula, cuenta del usuario, o complemento)|SEPARADOR|Fecha de vencimiento de SeudoBIN|FILLER2",
+	"FIELD_035_QR_CLIENTEBBOG_COMERCIOAVAL": "(.{6})(.{18})(.{1})(.{4})(.{8})", 
+	"FIELD_035_QR_CLIENTEBBOG_COMERCIOAVAL_DESCRIPTIONS": "BIN,NUMERO_DE_CUENTA_ORIGEN,SEPARADOR,FECHA_VENCIMIENTO,NUMERO_ENTIDAD",
+	"FIELD_035_QR_CLIENTEBBOG_COMERCIOAVAL_DESCRIPTIONS_DOCUMENTATION": "SeudoBIN segun el canal (008801: BBOG, 008802: BPOP, 008823: BOCC, 008852: BAVV)|Numero de cuenta origen a la derecha con ceros a la izquierda|SEPARADOR|Fecha de vencimiento SeudoBIN (9912: Transaccion original, Otro valor: Devolucion de la transaccion)|Numero de la entidad (00000001: BBOG transaccion original, Otro valor: Devolucion de la transaccion)",
+	"FIELD_035_QR_COMERCIOBBOG_DEBITOAVAL": "(.{6})(.{18})(.{1})(.{1})(.{11})", 
+	"FIELD_035_QR_COMERCIOBBOG_DEBITOAVAL_DESCRIPTIONS": "BIN,CUENTA_ORIGEN,SEPARADOR,CANAL,FILLER1",
+	"FIELD_035_QR_COMERCIOBBOG_DEBITOAVAL_DESCRIPTIONS_DOCUMENTATION": "SeudoBIN segun el canal (008801: BBOG, 008802: BPOP, 008823: BOCC, 008852: BAVV)|Numero de cuenta origen a la derecha con ceros a la izquierda|SEPARADOR|Fecha de vencimiento SeudoBIN (9912: Transaccion original, Otro valor: Devolucion de la transaccion)|Indicador adicional (991200000001: Devolucion de la transaccion, Otro valor: Transaccion original cuyo primer digito indica el canal{1: BBS, 2: WAP, Otro: Internet})",
+	"FIELD_035_GIRO": "(.{6})(.{10})(.{1})(.{4})(.{3})(.{5})(.{3})(.{5})", 
+	"FIELD_035_GIRO_DESCRIPTIONS": "BIN,IDENTIFICACION_CLIENTE,SEPARADOR,FECHA_DE_VENCIMIENTO,CODIGO_SERVICIO,FILLER1,CVV2,FILLER2",
+	"FIELD_035_GIRO_DESCRIPTIONS_DOCUMENTATION": "BIN (Para giro WebService o giro tradicional es 777790) Para el giro webservice el campo S104 posición 3 a 8 vale 099614; y para giro tradicional es 000000|Identificacion del cliente|SEPARADOR|Fecha de vencimiento por seudoBIN (9912)|CODIGO_SERVICIO (000)|FILLER1|CVV2|FILLER2",
+
+	"FIELD_037": "(.{4})(.{4})(.{4})",
+	"FIELD_037_DESCRIPTIONS": "IDENTIFICACION_OFICINA_ADQUIRIENTE,NUMERO_TERMINAL_RECEPTORA,NUMERO_DE_SECUENCIA_TRANSACCION",
+	"FIELD_037_DESCRIPTIONS_DOCUMENTATION": "Identificacion de la oficina adquiriente (0001: BBOG, 0002: BPOP, 0023: BOCC, 0052: BAVV, 0054: ATH)|Numero de la terminal receptora|Numero de secuencia de la transaccion",
+
+	"FIELD_041": "(.{4})(.{4})(.{4})(.{1})(.{3})",
+	"FIELD_041_DESCRIPTIONS": "IDENTIFICACION_DE_LA_RED_O_BANCO_ADQUIRIENTE,IDENTIFICACION_DE_LA_TERMINAL_ADQUIRIENTE,FILLER1,INDICADOR_DE_CANAL,FILLER2",
+	"FIELD_041_DESCRIPTIONS_DOCUMENTATION": "Identificacion de la red o banco adquiriente (0001: BBOG, 0002: BPOP, 0023: BOCC, 0052: BAVV, 0054: ATH)|Identificacion de la Terminal adquiriente (82XX: BBOG, 81XX: BOCC, 86XX: BPOP, 83XX: BAVV)|FILLER1|Indicador del Canal (2: BBOG PB/BV, 7: BBOG CB, 6:  BBOG BM, Otro valor: Otros bancos)|FILLER2",
+
+	"FIELD_043": "(.{4})(.{18})(.{13})(.{3})(.{3})",
+	"FIELD_043_DESCRIPTIONS": "ACCPTR_CONS,ACCPTR_NAME,ACCPTR_CITY,ACCPTR_STATE,ACCPTR_COUNTRY",
+	"FIELD_043_DESCRIPTIONS_DOCUMENTATION": "||||Codigo del pais (CO: Colombia)",
+	
+	"FIELD_043_INTERAVAL": "(.{5})(.{17})(.{13})(.{3})(.{2})",
+	"FIELD_043_INTERAVAL_DESCRIPTIONS": "CIUDAD_LOCALIZACION_CAPTURADOR,NOMBRE_TERMINAL,CIUDAD_ORIGEN_TRANSACCION,ESTADO_O_DEPTO_ORIGEN_TRANSACCION,PAIS_ORIGEN_TRANSACCION",
+	"FIELD_043_INTERAVAL_DESCRIPTIONS_DOCUMENTATION": "Ciudad de localizacion del capturador|Nombre de la terminal|Ciudad de origen de la tx|Estado o departamento de origen de la transaccion|Codigo del pais donde se realiza la transaccion (CO: Colombia)",
+	
+	"FIELD_048": "(.{4})(.{8})(.{1})(.{23})(.{8})",
+	"FIELD_048_DESCRIPTIONS": "ENTIDAD_DUENA_DE_LA_TERMINAL,FILLER1,TERMINAL_GRANDES_SUPERFICIES,FILLER2,CODIGO_INCOCREDITO",
+	
+	"FIELD_052": "(.{16})",
+	"FIELD_052_DESCRIPTIONS": "PIN",
+
+	"FIELD_054_QR_INTEROPERABLE": "(.{12})",
+	"FIELD_054_QR_INTEROPERABLE_DESCRIPTIONS": "MONTO_TRANSACCION",
+	"FIELD_054_QR_INTEROPERABLE_DESCRIPTIONS_DOCUMENTATION": "Monto de la transaccion (Igual al valor del campo P004)",
+	
+	"FIELD_054": "(.{15})(.{15})(.{1,15})",
+	"FIELD_054_DESCRIPTIONS": "VALOR_EFECTIVO_13_ENTEROS_2_DECIMALES,VALOR_CHEQUE_13_ENTEROS_2_DECIMALES,VALOR_TOTAL_13_ENTEROS_2_DECIMALES",
+	
+	"FIELD_102": "(.{4})(.{17})",
+	"FIELD_102_DESCRIPTIONS": "CODIGO_DE_COMPENSACION_DE_LA_ENTIDAD_DUENA_DE_LA_CUENTA,POSICIONES_CON_JUSTIFICACION_A_LA_DERECHA",
+	"FIELD_102_DESCRIPTIONS_DOCUMENTATION": "Codigo de compensacion de la entidad propietaria de la cuenta (0001: BBOG, 0002: BPOP, 0023: BOCC, 0052: BAVV, 0097: DALE)|Numero de cuenta origen con ceros a la izquierda",
+	
+	"FIELD_103": "(.{1})(.{1})(.{1})(.{4})(.{17})",
+	"FIELD_103_DESCRIPTIONS": "TIPO_DE_MONEDA,TIPO_ENTRE_ENTIDADES,TIPO_DE_MOVIMIENTO,ENTIDAD_CREDITO,NUMERO_DE_CUENTA_JUSTIFICADO_A_LA_DERECHA",
+	"FIELD_103_DESCRIPTIONS_DOCUMENTATION": "Tipo de moneda de pago (0 para pesos)|Tipo de transaccion entre entidades (0 para transaccion dentro de BBOG, 1 para BBOG con otra entidad)|Tipo de movimiento hacia BBOG (0: debito, 1: credito, 2: mixta)|Codigo de Compensacion de la entidad AVAL (0001: BBOG, 0002: BPOP, 0023: BOCC, 0052: BAVV)|Numero de cuenta con ceros a la izquierda",
+	
+	"FIELD_104": "(.{18})",
+	"FIELD_104_DESCRIPTIONS": "NUMERO_IDENTIFICACION_CLIENTE_EN_CEROS",
+	"FIELD_104_DESCRIPTIONS_DOCUMENTATION": "Numero de identificacion del cliente, unicamente ceros",
+	
+	"FIELD_104_GIRO": "(.{2})(.{6})(.{10})",
+	"FIELD_104_GIRO_DESCRIPTIONS": "FILLER1,TIPO_DE_GIRO,FILLER2",
+	"FIELD_104_GIRO_DESCRIPTIONS_DOCUMENTATION": "FILLER1,Tipo de giro(099614 para giro Webservice. 000000 para giro tradicional),FILLER2",
+	
+	"FIELD_112": "(.{16})",
+	"FIELD_112_DESCRIPTIONS": "NUMERO_DE_TARJETA_DEL_CORRESPONSAL",
+	
+	"FIELD_125_QR": "(.{24})(.{24})(.{25})(.{8})(.{2})(.{15})(.{17})(.{2})(.{15})(.{1})(.{5})(.{2})(.{10})",
+	"FIELD_125_QR_DESCRIPTIONS": "ADENDA_REF_1,ADENDA_REF_2,ADENDA_REF_3,ID_REGISTRO,TIPO_ID_ORIGEN,NUMERO_ID_ORIGEN,VALOR_PAGO,TIPO_ID_DESTINO,NUMERO_ID_DESTINO,VALIDACION_TITULARIDAD,TERMINAL_DESTINO,ID_PAGO_QR,FILLER",
+	"FIELD_125_QR_DESCRIPTIONS_DOCUMENTATION": "Adenda ref. 1: Nombre del comercio|Adenda ref. 2: Referencia 2 (12 posiciones del P037 seguido de ceros)|Adenda ref. 3: (Para devolucion QR debe venir fecha de la transaccion original del campo P013, hora de la transaccion del campo P012, fecha del negocio del campo P017, seguido de ceros)|Id de registro|Tipo de Id de origen|Numero de identificacion origen|Valor del pago|Tipo de Id del destino|Numero de identificacion destino|validacion de titularidad|Terminal destino|Identificacion de pago QR (1: QR Persona, 2: QR Comercios, 0: No es QR) seguido de identificador de devolucion (1: Devolucion, 0: Transaccion original)|Filler en ceros",
+	
+	"FIELD_125_CEL2CEL": "(.{24})(.{24})(.{42})",
+	"FIELD_125_CEL2CEL_DESCRIPTIONS": "ADENDA_REF_1,ADENDA_REF_2,ADENDA_REF_3",
+	"FIELD_125_CEL2CEL_DESCRIPTIONS_DOCUMENTATION": "Nombre del comercio|Adenda ref. 2 en ceros|Adenda ref. 3 con espacios"
+}

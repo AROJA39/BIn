@@ -1,0 +1,19 @@
+{
+	"STR_FIELD_NAME_SEPARATOR": ".",
+    "STR_STATUS_OWNER_PROCESS": "STATUS_OWNER_PROCESS",
+    "STR_SUBFIELD": "SUBFIELD_",
+    "STR_FIELD_TOKEN_PATTERN": "(FIELD_(?:(?:126)|(?:057)))",
+	"STR_FIELD_TOKEN_ROOT": "$1.",
+    "STR_STATUS_PROCESS": "STATUS_PROCESS",
+	
+    "STR_PATRON_TOKEN_QP": "\\A(\\w{2})(\\w{4})(\\w{6})(\\w{35})(\\w{1})(\\w{8})\\Z",
+    "STR_PATRON_TOKEN_QT": "\\A(\\w{6})(\\w{12})(\\d{12})(\\d[\\d ]{1})\\Z",
+    "STR_PATRON_TOKEN_BASE": "\\A(.*?)\\Z",    "STR_TOKENS_ENCONTRADOS": "TOKENS_ENCONTRADOS",
+	
+    "STR_PATRON_INI_TOKEN": "\\A[\\&][ ](\\d{5})(\\d{5})(.+)\\Z",
+    "STR_PATRON_OTRO_TOKEN": "\\A[\\!][ ](\\w{2})(\\d{5})[ ](.*?)\\Z",
+	
+    "STR_TIME_PROCESS": "TIME_PROCESS",
+    "STR_STATUS_DESCRIPTION": "STATUS_DESCRIPTION",
+    "STR_LONGITUD_TOTAL": "LONGITUD_TOTAL"
+}
