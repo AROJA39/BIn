@@ -4,13 +4,14 @@
 		"Puerto": "8085",
 		"Autor": "Banco de Bogota - Vicepresidencia de Desarrollo -Gerencia de Desarrollo COR Bancario -Gerencia de Desarrollo COR Bancario",
 		"Informacion": "Aplicacion de carga de archivos",
-		"Repositorio": "Git-ojo",
+		"Repositorio": "https://github.com/AROJA39/Upload-Of-Files",
 		"Version": "1.0.0",
-		"Version inicial": "1.0.0 Le llega una solicitud de  un archivo de configuracion y devolvemos el archivo configuracion en formato json",
 		"Versiones": {
 			"1.0.0": "Le llega una solicitud de  un archivo de configuracion y devolvemos el archivo configuracion en formato json"
 		},
-		"Proceso de control y monitoreo": "Se lleva el contador de peticiones fallidas exitosas, fecha y hora de la solicitud exitosa y fallida",
+		"Proceso de control y monitoreo": {
+			"1": "Se lleva el contador de peticiones fallidas exitosas, fecha y hora de la solicitud exitosa y fallida"
+		},
 		"Dependencia de librerias java": {
 			"1": "import co.com.msuploadoffiles.constants.Constants",
 			"2": "import co.com.msuploadoffiles.handler.get",
@@ -26,12 +27,15 @@
 			"12": "import io.javalin.http.Handler"
 		},
 		"Dependencia de configuracion": {
-			"1":"D:\\Apl\\Servicios\\Java\\bin\\json\\Configuraciones.json",
-			"2":"http://localhost:8085/get"
+			"1": "D:\\Apl\\Servicios\\Java\\bin\\json\\Configuraciones.json",
+			"2": "http://localhost:8085/get"
 		},
 		"Equipo": "",
-		"Equipo desarrollador":{
-			" 1.0.0": "Medina Tovar Karen Daniela - Rojas Beltran Adriana Patricia"
+		"Equipo desarrollador": {
+			" 1.0.0": {
+				"1": "Medina Tovar Karen Daniela",
+				"2": "Rojas Beltran Adriana Patricia"
+			}
 		},
 		"Objetivo": "Microservicio para leer y convertir archivos JSON, identificando el json que desea el usuario",
 		"Get": "http://localhost:8085/get?JSON=INFOAPOYO",
@@ -69,14 +73,51 @@
 		"Puerto": "8002",
 		"Autor": "Banco de Bogota - Vicepresidencia de Desarrollo -Gerencia de Desarrollo COR Bancario",
 		"Informacion": "Solicitud de identificacion de transacciones",
-		"Repositorio": "Git-ojo",
+		"Repositorio": "https://github.com/AROJA39/Transaction-Identificator",
 		"Version": "1.0.0",
+		"Versiones": {
+			"1.0.0": "Le llega una solicitud de parametros de una transaccion y devolvemos en formato json el tipo de transaccion ya identificada"
+		},
+		"Proceso de control y monitoreo": {
+			"1": "*"
+		},
+		"Dependencia de librerias java": {
+			"1": "co.com.mstransactionidentificator.handler.get",
+			"2": "java.util.HashMap",
+			"3": "java.util.List",
+			"4": "java.util.Map",
+			"5": "co.com.mstransactionidentificator.identificator.IdentificatorTransaction",
+			"6": "io.javalin.http.ContentType",
+			"7": "io.javalin.http.Context",
+			"8": "io.javalin.http.Handler",
+			"9": "java.util.HashMap",
+			"10": "java.util.Set",
+			"11": "java.util.concurrent.ConcurrentHashMap",
+			"12": "org.json.JSONObject",
+			"13": "co.com.mstransactionidentificator.constants.Constants",
+			"14": "co.com.mstransactionidentificator.usage.ClientFileUpload",
+			"15": "java.io.BufferedReader",
+			"16": "java.io.InputStreamReader",
+			"17": "java.net.HttpURLConnection",
+			"18": "java.net.URL",
+			"19": "java.util.concurrent.ConcurrentHashMap"
+		},
+		"Dependencia de configuracion": {
+			"1": ".\\\\json\\\\Configuraciones.json",
+			"2": "http://localhost:8085/get?JSON=",
+			"3": "http://localhost:8001/"
+		},
 		"Equipo": "",
-		"Ingenieros que iniciaron el Proceso": "Medina Tovar Karen Daniela - Rojas Beltran Adriana Patricia",
+		"Equipo desarrollador": {
+			" 1.0.0": {
+				"1": "Medina Tovar Karen Daniela",
+				"2": "Rojas Beltran Adriana Patricia"
+			}
+		},
 		"Objetivo": "Microservicio que identifica transacciones, dependiendo de los datos que ingrese el usuario buscando en InformacionApoyo.Json",
 		"Get": "http://localhost:8002/get?P3=401014&MTI=200&P35=4&P41=6&P22=051&P3_TIPODECUENTA=10",
-		"Parametros": "P3=401014&MTI=200&P35=4&P41=6&P22=051&P3_TIPODECUENTA=10",
-		"Body": {
+		"Parametros Entrada": "P3=401014&MTI=200&P35=4&P41=6&P22=051&P3_TIPODECUENTA=10",
+		"Parametros Salida": {
 			"TIEMPO": "24100 Nanosegundos",
 			"P3": "A000-Deposito Cuenta Ahorros A Cuenta Ahorros CB",
 			"MTI": "Autorizacion",
@@ -96,15 +137,54 @@
 		"Servicio": "Acceptance Criteria ISC Application",
 		"Puerto": "8090",
 		"Autor": "Banco de Bogota - Vicepresidencia de Desarrollo -Gerencia de Desarrollo COR Bancario",
-		"Repositorio": "Git-ojo",
-		"Version": "1",
-		"Equipo": "",
-		"Ingenieros que iniciaron el Proceso": "Medina Tovar Karen Daniela - Rojas Beltran Adriana Patricia",
-		"Objetivo": "Microservicio para identificar transacciones ISC, realizando la transfromacion de datos de base24 a EBCDIC",
 		"Informacion": "Criterios de aceptacion Solicitud de ISC",
+		"Repositorio": "https://github.com/AROJA39/Acceptance-Criteria-ISC",
+		"Version": "1",
+		"Versiones": {
+			"1.0.0": "Le llega una solicitud de  Los Feild de base 24 aciendo la conversion de todos los campos de Isc tanto en  text y Ebicdic"
+		},"Proceso de control y monitoreo": {
+			"1": "Se lleva el contador de peticiones fallidas exitosas, fecha y hora de la solicitud exitosa y fallida"
+		},
+		"Dependencia de librerias java": {
+			"1": "co.com.msacceptancecriteriaisc.constants.Constants",
+			"2": "co.com.msacceptancecriteriaisc.handler.get",
+			"3": "io.javalin.Javalin",
+			"4": "java.util.HashMap",
+			"5": "java.util.Objects",
+			"6": "java.util.Set",
+			"7": "java.util.concurrent.ConcurrentHashMap",
+			"8": "org.json.JSONObject",
+			"10": "co.com.msacceptancecriteriaisc.extraction.ExtractionField",
+			"11": "co.com.msacceptancecriteriaisc.objects.TrackingAcceptanceCriterial",
+			"12": "co.com.msacceptancecriteriaisc.support.ClientFileUpload",
+			"13": "import java.text.DateFormat",
+			"14": "import java.text.SimpleDateFormat",
+			"15": "import java.util.Calendar",
+			"16": "import java.util.Random",
+			"17": "import co.com.msacceptancecriteriaisc.support.CharacterEncodingConversion",
+			"18": "import java.nio.charset.Charset",
+			"19": "import java.nio.charset.StandardCharsets",
+			"20": "import java.io.BufferedReader",
+			"21": "import java.io.InputStreamReader",
+			"22": "import java.net.HttpURLConnection",
+			"23": "import java.net.URL",
+			"24": "import java.util.Map"
+		},
+		"Dependencia de configuracion": {
+			"1": "http://10.94.90.211:8085/get?JSON=",
+			"2": "http://localhost:8090/criteriaISC"
+		},
+		"Equipo": "",
+		"Equipo desarrollador": {
+			" 1.0.0": {
+				"1": "Medina Tovar Karen Daniela",
+				"2": "Rojas Beltran Adriana Patricia"
+			}
+		},
+		"Objetivo": "Microservicio para identificar transacciones ISC, realizando la transfromacion de datos de base24 a EBCDIC",
 		"Get": "http://10.94.90.211:8090/criteriaISC?RULE=02&FIELD_003=402014&FIELD_004=000050000&FIELD_103=202000100000000559510062&FIELD_037=005480804538&FIELD_041=00529453    7&FIELD_043=Calle 100 13 - 21     1100100BOGOTACUNCO&FIELD_104=003005586235001032436309&FIELD_126=%26 0000200054! QT00032 4020140000000000000000000000000 QP00056 XXEEEECCCCCCIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOFFFFFFFFF",
-		"Parametros": "RULE=02&FIELD_003=402014&FIELD_004=000050000&FIELD_103=202000100000000559510062&FIELD_037=005480804538&FIELD_041=00529453    7&FIELD_043=Calle 100 13 - 21     1100100BOGOTACUNCO&FIELD_104=003005586235001032436309&FIELD_126=%26 0000200054! QT00032 4020140000000000000000000000000 QP00056 XXEEEECCCCCCIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOFFFFFFFFF",
-		"Body": {
+		"Parametros Entrada": "RULE=02&FIELD_003=402014&FIELD_004=000050000&FIELD_103=202000100000000559510062&FIELD_037=005480804538&FIELD_041=00529453    7&FIELD_043=Calle 100 13 - 21     1100100BOGOTACUNCO&FIELD_104=003005586235001032436309&FIELD_126=%26 0000200054! QT00032 4020140000000000000000000000000 QP00056 XXEEEECCCCCCIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOFFFFFFFFF",
+		"Parametros Salida": {
 			"FIELD_049_FIXED_1": "91A1_F1",
 			"FIELD_037_INPUT_COPY_09_12": "C17A_F5F3F8",
 			"MSG_ISC": "1191A1F111A9B1D41197A540404011D138F0F0F0F01197A7404040119181F011D1396D11E5C7F0F0F0F011912DF0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0119161F9F911E2E5F111E4F2F011E5F4F111912FF2F1F7F4F1F8119130F0F2F1F5F2F3119131F1F1F0F2F8F4F711C17AF5F3F811E0E2D8F0F0F511C37BF5F5F9F5F1F0F0F6F211E5F1F0F3F0F0F5F5F8F6F2F3F511E4F3F0F1F0F3F2F4F3F6F3F0F9119115F111924AF0F0F111C3F0F0F0F0F0F5F0F0F0F011C5D2F0119199C38193938540F1F0F040F1F3406040F2F14141414140F1F1F0F0F1F0F0C2D6C7D6E3C1C3E4D5C3D6119162F4F5F311D140F4F5F3",
@@ -141,15 +221,54 @@
 		"Servicio": "Acceptance Criteria BASE24 Application",
 		"Puerto": "8089",
 		"Autor": "Banco de Bogota - Vicepresidencia de Desarrollo -Gerencia de Desarrollo COR Bancario",
-		"Repositorio": "Git-ojo",
-		"Version": "1",
-		"Equipo": "",
-		"Ingenieros que iniciaron el Proceso": "Medina Tovar Karen Daniela - Rojas Beltran Adriana Patricia",
-		"Objetivo": "Microservicio para identificar transacciones BASE24, obteniendo las expresiones regulares de los campos",
 		"Informacion": "Criterios de aceptacion Solicitud de BASE 24",
+		"Repositorio": "https://github.com/AROJA39/Acceptance-Criteria-B24",
+		"Version": "1",
+		"Versiones": {
+			"1.0.0": "Le llega una solicitud de Regla que desea consultar y devolvemos todo los campos de esa regla con su respectiva expresion regular"
+		},
+		"Proceso de control y monitoreo": {
+			"1": "Se lleva el contador de peticiones fallidas exitosas, fecha y hora de la solicitud exitosa y fallida"
+		},
+		"Dependencia de librerias java": {
+			"1": "import co.com.msacceptancecriteria.constants.Constants",
+			"2": "import co.com.msacceptancecriteria.handler.get",
+			"3": "import io.javalin.Javalin",
+			"4": "import io.javalin.http.HttpCode",
+			"5": "import java.util.Objects",
+			"6": "import java.util.concurrent.ConcurrentHashMap",
+			"7": "import org.json.JSONObject",
+			"8": "import co.com.msacceptancecriteria.objects.TrackingAcceptanceCriterial",
+			"9": "import co.com.msacceptancecriteria.support.ClientFileUpload",
+			"10": "import java.util.HashMap",
+			"11": "import java.util.List",
+			"12": "import java.util.Map",
+			"13": "import co.com.msacceptancecriteria.business.AcceptanceCriteriaBusiness",
+			"14": "import io.javalin.http.ContentType",
+			"15": "import io.javalin.http.Context",
+			"16": "import io.javalin.http.Handler",
+			"17": "import java.util.concurrent.atomic.AtomicInteger",
+			"18": "import java.io.BufferedReader",
+			"19": "import java.io.InputStreamReader",
+			"20": "import java.net.HttpURLConnection",
+			"21": "import java.net.URL",
+			"22": "import com.google.gson.Gson"
+		},
+		"Dependencia de configuracion": {
+			"1": "http://10.94.90.211:8085/get?JSON=",
+			"2": "http://localhost:8089/acceptanceCriteria"
+		},
+		"Equipo": "",
+		"Equipo desarrollador": {
+			" 1.0.0": {
+				"1": "Medina Tovar Karen Daniela",
+				"2": "Rojas Beltran Adriana Patricia"
+			}
+		},
+		"Objetivo": "Microservicio para identificar transacciones BASE24, obteniendo las expresiones regulares de los campos",
 		"Get": "http://localhost:8089/acceptanceCriteria?RULE=03",
-		"Parametros": "RULE=03",
-		"Body": {
+		"Parametros Entrada": "RULE=03",
+		"Parametros Salida": {
 			"FIELD_032-2": "^100000000(02|23|52)$",
 			"FIELD_052-1": "^[F]{16}$",
 			"FIELD_035-5": "^(.){17}\\d{4}.*$",
@@ -186,13 +305,58 @@
 		"Puerto": "8901",
 		"Autor": "Banco de Bogota - Vicepresidencia de Desarrollo -Gerencia de Desarrollo COR Bancario",
 		"Informacion": "Separacion de campos",
+		"Repositorio": "https://github.com/AROJA39/Field-Separator",
 		"Version": "1",
+		"Versiones": {
+			"1.0.0": "Le llega una solicitud de los Field, y devolvemos los  matchen las expresiones regulares"
+		},
+		"Proceso de control y monitoreo": {
+			"1": "Se lleva el contador de peticiones fallidas exitosas, fecha y hora de la solicitud exitosa y fallida"
+		},
+		"Dependencia de librerias java": {
+			"1": "import java.io.FileWriter",
+			"2": "import java.io.IOException",
+			"3": "import java.net.HttpURLConnection",
+			"4": "import java.net.URL",
+			"5": "import java.util.StringTokenizer",
+			"6": "import java.util.concurrent.ConcurrentHashMap",
+			"7": "import org.json.JSONObject",
+			"8": "import java.util.ArrayList",
+			"9": "import java.util.Date",
+			"10": "import java.util.List",
+			"11": "import java.util.concurrent.atomic.AtomicInteger",
+			"12": "import org.json.JSONArray",
+			"13": "import java.net.URL",
+			"14": "import java.util.regex.Matcher",
+			"15": "import java.util.NoSuchElementException",
+			"16": "import java.util.Properties",
+			"17": "import java.util.regex.Pattern",
+			"18": "import io.javalin.Javalin",
+			"19": "import io.javalin.http.Context",
+			"20": "import io.javalin.plugin.openapi.annotations.ContentType",
+			"21": "import java.io.ByteArrayOutputStream",
+			"22": "import java.io.PrintStream",
+			"23": "import java.util.HashMap",
+			"24": "import java.util.Map",
+			"25": "import org.eclipse.jetty.http.HttpStatus",
+			"26": "import java.io.BufferedReader",
+			"27": "import java.io.IOException",
+			"28": "import java.io.InputStream",
+			"29": "import java.io.InputStreamReader"
+		},
+		"Dependencia de configuracion": {
+			"1": "http://localhost:8085"
+		},
 		"Equipo": "",
-		"Ingenieros que iniciaron el Proceso": "Chaves Palacios Juan Miguel",
+		"Equipo desarrollador": {
+			" 1.0.0": {
+				"1": "Chaves Palacios Juan Miguel"
+			}
+		},
 		"Objetivo": "El microservicio es ofrecer diferentes endPoints que satisfagan necesidades especificas en el procesamiento de campos deuna transaccion:resync -> para recargar la configuracion de persistencia a la memoria activastate -> para entregar informacion del estado actual de procesamiento en elservicioloadcache -> para cargar de persistencia todos los criterios de aceptacionde separacion de campos en memoria activawrite -> para escribir en un archivo en disco el conenido completo actualdel cache, con propositos de seguimiento o depuracionacceptancecriteria -> resuelve las expresiones regulares para un tipoparticular de transaccionsubfields -> Separa los campos en subcampos que han sido configuradosmediante expresiones regulares para tal fintokens -> separa los campos de tokens encontrados entre los campos deentrada y los retorna en la salidavalidations -> aplica las expresiones regulares de validacion por campoencontrado en la entrada y responde verdadero o falso dependiendo de si lacumple en cada campo",
 		"Get": "http://localhost:8901/subfields?FIELD_037=0000&FIELD_041=0001792700007 &FIELD_043=AVV66Cra 30 10-77 00011001 &FIELD_985=AAAA",
-		"Parametros": "FIELD_037=0000&FIELD_041=0001792700007 &FIELD_043=AVV66Cra 30 10-77 00011001 &FIELD_985=AAAA",
-		"Body": {
+		"Parametros Entrada": "FIELD_037=0000&FIELD_041=0001792700007 &FIELD_043=AVV66Cra 30 10-77 00011001 &FIELD_985=AAAA",
+		"Parametros Salida": {
 			"FIELD_037.WARNING_FIELD_EXPRESION": "NO_MATCH_ON_REGULAR_EXPRESION RE:[(.{4})(.{4})(.{4})] AND VALUE:[0000]",
 			"FIELD_041.WARNING_FIELD_EXPRESION": "NO_MATCH_ON_REGULAR_EXPRESION RE:[(.{4})(.{4})(.{4})(.{1})(.{3})] AND VALUE:[0001792700007 ]",
 			"FIELD_985.WARNING_FIELD_EXPRESION": "No existe expresion regular definida para este campo",
@@ -203,15 +367,55 @@
 		"Servicio": "Current or nextday",
 		"Puerto": "8080-dinamico",
 		"Autor": "Banco de Bogota - Vicepresidencia de Desarrollo -Gerencia de Desarrollo COR Bancario",
-		"Repositorio": "Git-ojo",
-		"Version": "1",
-		"Equipo": "Villalba Gaviria Andres",
-		"Ingenieros que iniciaron el Proceso": "",
-		"Objetivo": "El microservicio de Current o Next_day tiene como objetivo clasificar una transaccion como Current o como Next_day para su posterior empleo en otros procesos en el Banco.",
 		"Informacion": "Dia actual o siguiente",
+		"Repositorio": "https://github.com/AROJA39/Current-or-Next-Day",
+		"Version": "1",
+		"Versiones": {
+			"1.0.0": "Le llega una solicitud de  fechaCompensacion y fechaYHoraCalendario, devolvemos la clasificacion de current o nextday"
+		},
+		"Proceso de control y monitoreo": {
+			"1": "Se lleva el contador de peticiones fallidas exitosas, fecha y hora de la solicitud exitosa y fallida"
+		},
+		"Dependencia de librerias java": {
+			"1": "import lombok.Data",
+			"2": "import java.time.LocalDateTime",
+			"3": "import java.time.LocalTime",
+			"4": "import java.time.format.DateTimeFormatter",
+			"5": "import java.time.format.DateTimeParseException",
+			"6": "import java.util.HashMap",
+			"7": "import java.util.Map",
+			"8": "import java.util.Random",
+			"9": "import java.util.concurrent.ConcurrentHashMap",
+			"10": "import java.util.regex.Matcher",
+			"11": "import java.util.regex.Pattern",
+			"12": "import rest.CurrentOrNextDayRestController",
+			"13": "import java.net.HttpURLConnection",
+			"14": "import java.net.URL",
+			"15": "import java.time.ZoneId",
+			"16": "import java.util.concurrent.atomic.AtomicInteger",
+			"17": "import org.json.JSONObject",
+			"18": "import businesslogic.TransactionIdentificator",
+			"19": "import businesslogic.TransactionIdentificator2",
+			"20": "import io.javalin.Javalin",
+			"21": "import io.javalin.http.ContentType",
+			"22": "import io.javalin.http.HttpCode",
+			"23": "import utilities.Constants",
+			"24": "import utilities.IOUtilities",
+			"25": "import java.io.*"
+		},
+		"Dependencia de configuracion": {
+			"1": "ninguna"
+		},
+		"Equipo": "",
+		"Equipo desarrollador": {
+			" 1.0.0": {
+				"1": "Villalba Gaviria Andres"
+			}
+		},
+		"Objetivo": "El microservicio de Current o Next_day tiene como objetivo clasificar una transaccion como Current o como Next_day para su posterior empleo en otros procesos en el Banco.",
 		"Get": "http://localhost:8080/clasificar-current-o-nextday?fechaCompensacion=0120&fechaYHoraCalendario=0120235958",
-		"Parametros": "fechaCompensacion=0120&fechaYHoraCalendario=0120235958",
-		"Body": {
+		"Parametros Entrada": "fechaCompensacion=0120&fechaYHoraCalendario=0120235958",
+		"Parametros Salida": {
 			"Z_STATUS": "SUCCESS",
 			"CLASSIFICATION_CURRENT_OR_NEXTDAY": "CURRENT"
 		}
@@ -220,18 +424,57 @@
 		"Servicio": "Ascii to Ebcdic",
 		"Puerto": "8080-dinamico",
 		"Autor": "Banco de Bogota - Vicepresidencia de Desarrollo -Gerencia de Desarrollo COR Bancario",
-		"Repositorio": "Git-ojo",
-		"Version": "1",
-		"Equipo": "Villalba Gaviria Andres - Chaves Palacios Juan Miguel",
-		"Ingenieros que iniciaron el Proceso": "",
-		"Objetivo": "Microservicio es la conversion de bytes de ASCII a EBCDIC y viceversa. El endpoint recibe un arreglo de bytes en ASCII y retorna el arreglo transformado a EBCDIC",
 		"Informacion": "Conversion de codificacion de caracteres Ascii to Ebcdic",
+		"Repositorio": "https://github.com/AROJA39/Character-Format-Converter-ASCCI-To-Ebcdic",
+		"Version": "1",
+		"Versiones": {
+			"1.0.0": "Le llega una solicitud de  date en formato ascci o abcdic y devolvemos la conversion de la solicitud contraria"
+		},
+		"Proceso de control y monitoreo": {
+			"1": "Se lleva el contador de peticiones fallidas exitosas, fecha y hora de la solicitud exitosa y fallida"
+		},
+		"Dependencia de librerias java": {
+			"1": "import rest.CharFormatConverterRestController",
+			"2": "import io.javalin.Javalin",
+			"3": "import io.javalin.http.ContentType",
+			"4": "import io.javalin.http.HttpCode",
+			"5": "import org.json.JSONObject",
+			"6": "import utilities.CharFormatConverter",
+			"7": "import utilities.Constants",
+			"8": "import java.time.LocalDateTime",
+			"9": "import java.time.ZoneId",
+			"10": "import java.util.HashMap",
+			"11": "import java.util.Map",
+			"12": "import java.util.concurrent.ConcurrentHashMap",
+			"13": "import java.util.concurrent.atomic.AtomicInteger",
+			"14": "import javax.xml.bind.DatatypeConverter",
+			"15": "import java.io.BufferedReader",
+			"16": "import java.io.IOException",
+			"17": "import java.io.InputStream",
+			"18": "import java.io.InputStreamReader"
+		},
+		"Dependencia de configuracion": {
+			"1": "ninguna"
+		},
+		"Equipo": "",
+		"Equipo desarrollador": {
+			" 1.0.0": {
+				"1": "Villalba Gaviria Andres",
+				"2": "Chaves Palacios Juan Miguel"
+			}
+		},
+		"Objetivo": "Microservicio es la conversion de bytes de ASCII a EBCDIC y viceversa. El endpoint recibe un arreglo de bytes en ASCII y retorna el arreglo transformado a EBCDIC",
 		"Get": "http://localhost:8080/ascii-to-ebcdic?data=012F911693949596564942411120204154544341543231202020203733333330343831383436323620202020202020203030303030303030116A9030373035323211454B30114330303030303030303030323135343030116A913138343632361143233030323630373630373511413A383034353338116A7E31116A2D3032116A2F3939116AC23030303039343533116A6130116A073030343634353634116BA230303532116A8531116A053030303030303030303030303030303030303030116A7243616C6C6520313030203133202D203231202020202031313030313030424F474F544143554E434F11707620201155323011553330303030303031303332343336333039114A2039343533114A9830303030114A9950115647303030303030303030303030303030301170782020117AA34D11553330313033323433363330391153563111563431115631303033303035353836323335115C5330303030",
-		"Parametros": "data=012F911693949596564942411120204154544341543231202020203733333330343831383436323620202020202020203030303030303030116A9030373035323211454B30114330303030303030303030323135343030116A913138343632361143233030323630373630373511413A383034353338116A7E31116A2D3032116A2F3939116AC23030303039343533116A6130116A073030343634353634116BA230303532116A8531116A053030303030303030303030303030303030303030116A7243616C6C6520313030203133202D203231202020202031313030313030424F474F544143554E434F11707620201155323011553330303030303031303332343336333039114A2039343533114A9830303030114A9950115647303030303030303030303030303030301170782020117AA34D11553330313033323433363330391153563111563431115631303033303035353836323335115C5330303030",
-		"Body": {
+		"Parametros Entrada": "data=012F911693949596564942411120204154544341543231202020203733333330343831383436323620202020202020203030303030303030116A9030373035323211454B30114330303030303030303030323135343030116A913138343632361143233030323630373630373511413A383034353338116A7E31116A2D3032116A2F3939116AC23030303039343533116A6130116A073030343634353634116BA230303532116A8531116A053030303030303030303030303030303030303030116A7243616C6C6520313030203133202D203231202020202031313030313030424F474F544143554E434F11707620201155323011553330303030303031303332343336333039114A2039343533114A9830303030114A9950115647303030303030303030303030303030301170782020117AA34D11553330313033323433363330391153563111563431115631303033303035353836323335115C5330303030",
+		"Parametros Salida": {
 			"DATA_EBCDIC": "0161313233343536E5C9C2C1114040C1E3E3C3C1E3F2F140404040F7F3F3F3F0F4F8F1F8F4F6F2F64040404040404040F0F0F0F0F0F0F0F0119130F0F7F0F5F2F211C5D2F011C3F0F0F0F0F0F0F0F0F0F0F2F1F5F4F0F0119131F1F8F4F6F2F611C37BF0F0F2F6F0F7F6F0F7F511C17AF8F0F4F5F3F81191A1F1119160F0F2119161F9F9119162F0F0F0F0F9F4F5F3119181F011912FF0F0F4F6F4F5F6F411924AF0F0F5F2119115F111912DF0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0119199C38193938540F1F0F040F1F3406040F2F14040404040F1F1F0F0F1F0F0C2D6C7D6E3C1C3E4D5C3D61197A5404011E4F2F011E4F3F0F0F0F0F0F0F1F0F3F2F4F3F6F3F0F911D140F9F4F5F311D138F0F0F0F011D139D711E5C7F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F01197A7404011A9B1D411E4F3F0F1F0F3F2F4F3F6F3F0F911E2E5F111E5F4F111E5F1F0F0F3F0F0F5F5F8F6F2F3F511E0E2F0F0F0F0",
 			"Z_STATUS": "SUCCESS",
 			"PROCESS_TIME": "9.5666 milliseconds"
 		}
+	},
+	"08": {
+		"Servicio": "BIN",
+		"Repositorio": "https://github.com/AROJA39/Bin",
+		"Informacion": "Carpeta con todos los archivos JSON y .jar"
 	}
 }

@@ -6,9 +6,15 @@
 	"STR_FIELD_TOKEN_ROOT": "$1.",
     "STR_STATUS_PROCESS": "STATUS_PROCESS",
 	
+	"STR_PATRON_TOKEN_BASE": "STR_PATRON_TOKEN_",
+    "STR_PATRON_TOKEN_DEFAULT": "\\A(.*?)\\Z",
+	
     "STR_PATRON_TOKEN_QP": "\\A(\\w{2})(\\w{4})(\\w{6})(\\w{35})(\\w{1})(\\w{8})\\Z",
+	
     "STR_PATRON_TOKEN_QT": "\\A(\\w{6})(\\w{12})(\\d{12})(\\d[\\d ]{1})\\Z",
-    "STR_PATRON_TOKEN_BASE": "\\A(.*?)\\Z",    "STR_TOKENS_ENCONTRADOS": "TOKENS_ENCONTRADOS",
+	"STR_PATRON_TOKEN_QT_DESCRIPTIONS": "CAMPO_A,CAMPO_B_666,CAMPO_C,CAMPO_D",
+		
+	"STR_TOKENS_ENCONTRADOS": "TOKENS_ENCONTRADOS",
 	
     "STR_PATRON_INI_TOKEN": "\\A[\\&][ ](\\d{5})(\\d{5})(.+)\\Z",
     "STR_PATRON_OTRO_TOKEN": "\\A[\\!][ ](\\w{2})(\\d{5})[ ](.*?)\\Z",
