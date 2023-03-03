@@ -8,5 +8,6 @@
 	"BINES": "D:\\Apl\\Servicios\\Java\\bin\\json\\Bines.json",
 	"EXPRESIONESREGULARES": "D:\\Apl\\Servicios\\Java\\bin\\json\\UniversoExpresionesRegulares.json",
 	"CRITERIO_ACEPTACION_ISC": "D:\\Apl\\Servicios\\Java\\bin\\json\\acceptance_criteria_isc.json",
-	"CRITERIO_ACEPTACION_BASE_24": "D:\\Apl\\Servicios\\Java\\bin\\json\\acceptance_criteria_base_24.json"
+	"CRITERIO_ACEPTACION_BASE_24": "D:\\Apl\\Servicios\\Java\\bin\\json\\acceptance_criteria_base_24.json",
+	"IDENTIFYRULES" : "D:\\Apl\\Servicios\\Java\\bin\\json\\IdentificacionTx.json"
 }
